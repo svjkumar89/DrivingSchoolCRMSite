@@ -82,6 +82,7 @@
       <li><strong>Business/workspace details</strong> — your driving school's name and, optionally, contact details you choose to enter in Settings.</li>
       <li><strong>Subscription status</strong> — whether you're on the Free or Pro plan, and purchase/renewal status of your subscription. We do not receive or store your card, UPI, or bank details — payments are processed entirely by Google Play Billing.</li>
       <li><strong>Push notification token</strong> — a device identifier used to deliver renewal-reminder notifications to your device via Firebase Cloud Messaging.</li>
+      <li><strong>App usage and diagnostic data</strong> — we use Firebase Analytics and Firebase Crashlytics to see which screens are used and to receive crash/error reports, so we can find and fix bugs and improve the App. This includes device/OS information, app version, screen names, and, when the App crashes or hits an error, a stack trace. It does not include your business data (customer names, mobile numbers, licence details, etc.).</li>
     </ul>
 
     <h2 id="customer-data">3. Data you manage about your own customers</h2>
@@ -107,8 +108,9 @@
       <li>To send renewal and expiry reminder notifications.</li>
       <li>To process and validate your subscription.</li>
       <li>To respond to support requests you send us.</li>
+      <li>To understand app usage and diagnose crashes, so we can improve reliability and the product.</li>
     </ul>
-    <p>We do not use your data for advertising, and we do not run any third-party ad or tracking SDKs in the App.</p>
+    <p>We do not use your data for advertising, we do not run any third-party ad SDKs, and we do not collect or use your device's Advertising ID.</p>
 
     <h2 id="storage">5. Where your data is stored</h2>
     <p>
@@ -129,6 +131,7 @@
       <li><strong>Supabase</strong> — cloud database used for Pro-plan sync and backup.</li>
       <li><strong>RevenueCat</strong> and <strong>Google Play Billing</strong> — subscription management and payment processing. Neither we nor RevenueCat ever see your card or bank details; that's handled entirely by Google Play.</li>
       <li><strong>Firebase Cloud Messaging</strong> — delivery of renewal-reminder push notifications.</li>
+      <li><strong>Firebase Analytics and Firebase Crashlytics</strong> — app usage analytics and crash/error reporting, used only to improve the App. Not used for advertising, and not shared with ad networks.</li>
     </ul>
     <p>
       The App also lets you open WhatsApp or your phone's dialer with a pre-filled message to contact
