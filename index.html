@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>DrivingSchoolCRM — Manage Leads, Customers, Vehicles &amp; Renewals | Driving School Software</title>
-<meta name="description" content="All-in-one CRM for driving schools. Track leads, customers, vehicles, RC/FC/Insurance/PUC renewals, driving licence &amp; LLR expiry, payments and reports — works offline, syncs everywhere.">
+<title>DrivingSchoolCRM — Driving School Management App | Leads, Renewals &amp; Payments</title>
+<meta name="description" content="The all-in-one CRM app for Indian driving schools &amp; RTO agents. Track customers, vehicles, RC/FC/Insurance/PUC renewals, licence &amp; LLR expiry, leads and payments. Free to start, works offline. Download on Google Play.">
 <meta name="keywords" content="driving school software, driving school CRM, driving school management app, RC FC insurance PUC renewal reminder, learner licence tracking software, RTO agent app, motor training school software India">
 <link rel="canonical" href="https://drivingschoolcrm.site/">
 <meta name="robots" content="index, follow">
@@ -39,18 +39,69 @@
   "operatingSystem": "ANDROID",
   "applicationCategory": "BusinessApplication",
   "url": "https://drivingschoolcrm.site/",
+  "installUrl": "https://play.google.com/store/apps/details?id=com.driveoffice.app",
   "image": "https://drivingschoolcrm.site/assets/icon-512.png",
-  "description": "All-in-one CRM for driving schools — leads, customers, vehicles, RC/FC/Insurance/PUC renewals, driving licence &amp; LLR expiry tracking, payments and reports. Works offline and syncs across devices.",
-  "offers": {
-    "@type": "Offer",
-    "price": "0",
-    "priceCurrency": "INR",
-    "description": "Free plan available; Pro subscription unlocks cloud sync and multi-branch support."
-  },
+  "description": "All-in-one CRM for driving schools — leads, customers, vehicles, RC/FC/Insurance/PUC renewals, driving licence & LLR expiry tracking, payments and reports. Works offline and syncs across devices.",
+  "offers": [
+    {
+      "@type": "Offer",
+      "name": "Free",
+      "price": "0",
+      "priceCurrency": "INR",
+      "description": "Free forever — 25 customers, 25 vehicles, 1 branch, fully offline."
+    },
+    {
+      "@type": "Offer",
+      "name": "Pro (monthly)",
+      "price": "499",
+      "priceCurrency": "INR",
+      "description": "Cloud sync, push renewal reminders, cloud backup, 5 branches, 500 customers, 2000 vehicles. 7-day free trial."
+    },
+    {
+      "@type": "Offer",
+      "name": "Business (monthly)",
+      "price": "699",
+      "priceCurrency": "INR",
+      "description": "Everything in Pro plus team member logins, 10 branches, unlimited customers and vehicles."
+    }
+  ],
   "author": {
     "@type": "Person",
     "name": "Vijay Kumar"
   }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Does DrivingSchoolCRM work without internet?",
+      "acceptedAnswer": {"@type": "Answer", "text": "Yes. Every screen works fully offline from data stored on your device. Cloud sync on Pro and Business keeps your data backed up and available on multiple devices whenever you are online."}
+    },
+    {
+      "@type": "Question",
+      "name": "How much does DrivingSchoolCRM cost?",
+      "acceptedAnswer": {"@type": "Answer", "text": "The Free plan costs nothing, forever. Pro is ₹499/month or ₹4,999/year and adds cloud sync, push renewal reminders and up to 5 branches. Business is ₹699/month or ₹6,999/year and adds staff logins, 10 branches and unlimited customers and vehicles. Paid plans start with a 7-day free trial and can be cancelled anytime in Google Play."}
+    },
+    {
+      "@type": "Question",
+      "name": "Can my staff use the app with their own logins?",
+      "acceptedAnswer": {"@type": "Answer", "text": "Yes, on the Business plan. Invite staff by email, and they sign in with their own Google account and see your branch's data with owner-controlled permissions."}
+    },
+    {
+      "@type": "Question",
+      "name": "Can I import my existing customer data from Excel?",
+      "acceptedAnswer": {"@type": "Answer", "text": "Yes. Export your spreadsheet as CSV and import customers, vehicles and renewals directly in the app instead of retyping them."}
+    },
+    {
+      "@type": "Question",
+      "name": "Which renewals can I track?",
+      "acceptedAnswer": {"@type": "Answer", "text": "RC, FC, Insurance, PUC and Permit are built in, plus driving licence and learner's licence (LLR) expiry per customer. You can also configure your own renewal types with custom validity periods."}
+    }
+  ]
 }
 </script>
 </head>
@@ -70,6 +121,7 @@
       <a href="/terms.html">Terms</a>
     </nav>
     <div class="nav-cta">
+      <a class="btn btn-primary" href="https://play.google.com/store/apps/details?id=com.driveoffice.app" rel="noopener">Download Free</a>
       <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
     </div>
   </div>
@@ -87,9 +139,12 @@
           never miss a renewal again.
         </p>
         <div class="hero-ctas">
-          <a class="btn btn-primary" href="#features">See features</a>
+          <a href="https://play.google.com/store/apps/details?id=com.driveoffice.app" rel="noopener" aria-label="Get DrivingSchoolCRM on Google Play">
+            <img src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" alt="Get it on Google Play" height="64" style="height: 64px; width: auto; margin: -10px 0;">
+          </a>
+          <a class="btn btn-outline" href="#pricing">See pricing</a>
         </div>
-        <p class="hero-note">Coming soon · Free to start · Works offline</p>
+        <p class="hero-note">Free to start · Works offline · 7-day Pro trial</p>
       </div>
       <div class="hero-art">
         <img src="/assets/icon-512.png" alt="DrivingSchoolCRM app icon" width="260" height="260">
@@ -208,32 +263,122 @@
   <section class="alt-bg" id="pricing">
     <div class="container">
       <div class="section-head">
-        <h2>Simple pricing</h2>
-        <p>Start free. Upgrade only when you need cloud sync and multi-device access.</p>
+        <h2>Simple pricing that grows with your school</h2>
+        <p>Start free, no card required. Every paid plan begins with a 7-day free trial — cancel anytime in Google Play.</p>
       </div>
-      <div class="grid-2" style="max-width: 720px; margin: 0 auto;">
+      <div class="grid-3">
         <div class="pricing-card">
           <h3>Free</h3>
           <p class="price">₹0, forever</p>
           <ul>
-            <li>✓ Unlimited customers &amp; vehicles</li>
+            <li>✓ 25 customers &amp; 25 vehicles</li>
+            <li>✓ 1 branch</li>
             <li>✓ Renewals, leads &amp; payments tracking</li>
             <li>✓ Licence &amp; LLR expiry tracking</li>
             <li>✓ Works fully offline, single device</li>
+            <li>✓ Manual backup &amp; restore</li>
           </ul>
+          <a class="btn btn-outline" href="https://play.google.com/store/apps/details?id=com.driveoffice.app" rel="noopener">Start Free</a>
         </div>
         <div class="pricing-card highlight">
-          <span class="pricing-badge">Recommended</span>
+          <span class="pricing-badge">Most Popular</span>
           <h3>Pro</h3>
-          <p class="price">See current pricing in the app</p>
+          <p class="price"><strong>₹499/month</strong> or ₹4,999/year (save 2 months)</p>
           <ul>
-            <li>✓ Everything in Free</li>
-            <li>✓ Cloud backup &amp; multi-device sync</li>
-            <li>✓ Multiple branches</li>
+            <li>✓ 500 customers &amp; 2,000 vehicles</li>
+            <li>✓ Up to 5 branches</li>
+            <li>✓ Cloud sync &amp; multi-device access</li>
+            <li>✓ Push renewal reminders</li>
+            <li>✓ Automatic cloud backup</li>
+            <li>✓ Reports &amp; dashboard</li>
+          </ul>
+          <a class="btn btn-primary" href="https://play.google.com/store/apps/details?id=com.driveoffice.app" rel="noopener">Try Pro Free for 7 Days</a>
+        </div>
+        <div class="pricing-card">
+          <h3>Business</h3>
+          <p class="price"><strong>₹699/month</strong> or ₹6,999/year (save 2 months)</p>
+          <ul>
+            <li>✓ Everything in Pro</li>
+            <li>✓ Unlimited customers &amp; vehicles</li>
+            <li>✓ Up to 10 branches</li>
+            <li>✓ Team members &amp; staff logins</li>
+            <li>✓ Advanced, branch-wise reports</li>
             <li>✓ Priority support</li>
           </ul>
+          <a class="btn btn-outline" href="https://play.google.com/store/apps/details?id=com.driveoffice.app" rel="noopener">Try Business Free</a>
         </div>
       </div>
+      <p style="text-align: center; font-size: 13.5px; color: #64748B; margin-top: 18px;">
+        Billed through Google Play. Subscriptions renew automatically and can be cancelled anytime from your Play Store account.
+      </p>
+    </div>
+  </section>
+
+  <section id="faq">
+    <div class="container">
+      <div class="section-head">
+        <h2>Frequently asked questions</h2>
+      </div>
+      <div class="grid-2">
+        <div>
+          <div class="benefit-row">
+            <span class="tick">?</span>
+            <div>
+              <h4>Does it work without internet?</h4>
+              <p>Yes — every screen works fully offline. Pro and Business add cloud sync so your data is backed up and available on multiple devices whenever you're online.</p>
+            </div>
+          </div>
+          <div class="benefit-row">
+            <span class="tick">?</span>
+            <div>
+              <h4>Can I import my existing Excel data?</h4>
+              <p>Yes. Export your sheet as CSV and import customers, vehicles and renewals directly — no retyping years of records.</p>
+            </div>
+          </div>
+          <div class="benefit-row">
+            <span class="tick">?</span>
+            <div>
+              <h4>Which renewals can I track?</h4>
+              <p>RC, FC, Insurance, PUC and Permit are built in, plus driving licence and LLR expiry per customer — and you can add your own renewal types with custom validity periods.</p>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="benefit-row">
+            <span class="tick">?</span>
+            <div>
+              <h4>Can my staff have their own logins?</h4>
+              <p>On the Business plan, invite staff by email — they sign in with their own Google account and work in your branch with owner-controlled roles.</p>
+            </div>
+          </div>
+          <div class="benefit-row">
+            <span class="tick">?</span>
+            <div>
+              <h4>Is my data safe?</h4>
+              <p>Your data lives on your device, and on paid plans it's additionally backed up to the cloud with per-account isolation. You can export everything to CSV at any time — no lock-in.</p>
+            </div>
+          </div>
+          <div class="benefit-row">
+            <span class="tick">?</span>
+            <div>
+              <h4>How do I cancel?</h4>
+              <p>Anytime, in two taps, from your Google Play subscriptions page. Your data stays intact on the Free plan — nothing is deleted.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="alt-bg">
+    <div class="container" style="text-align: center;">
+      <div class="section-head">
+        <h2>Run your driving school from your pocket</h2>
+        <p>Join driving schools across India managing renewals, customers and payments in one app.</p>
+      </div>
+      <a href="https://play.google.com/store/apps/details?id=com.driveoffice.app" rel="noopener" aria-label="Get DrivingSchoolCRM on Google Play">
+        <img src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" alt="Get it on Google Play" height="72" style="height: 72px; width: auto;">
+      </a>
     </div>
   </section>
 </main>
@@ -255,6 +400,8 @@
         <ul>
           <li><a href="#features">Features</a></li>
           <li><a href="#pricing">Pricing</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="https://play.google.com/store/apps/details?id=com.driveoffice.app" rel="noopener">Download on Google Play</a></li>
         </ul>
       </div>
       <div>
