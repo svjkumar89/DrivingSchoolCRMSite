@@ -311,6 +311,39 @@ section { padding: 56px 0; }
 }
 .pricing-card li:last-child { border-bottom: none; }
 
+.grid-1 {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 18px;
+  max-width: 540px;
+  margin: 0 auto;
+}
+
+.addon-card {
+  background: linear-gradient(135deg, var(--primary-soft), #f0fdf4);
+  border: 2px solid var(--primary-dark);
+}
+
+.addon-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 12px;
+}
+
+.addon-header .icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  flex-shrink: 0;
+}
+
 /* cta band */
 
 .cta-band {
